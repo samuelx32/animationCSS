@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animação com CSS</title>
+
+    <style>
+        body{
+            background-color: black;
+        }
+
+        section{
+            border:white 2px solid;
+            width:50vw;
+            margin:auto;
+            height: 40vw;
+        }
+
+        div {
+          height: 10vw;
+          width: 15vw;
+          background: gray;
+          margin: 2vw auto;
+          border-radius: 5px;
+          position: relative;
+        }
+      
+        #rect {
+          animation-name: rainbow;
+          animation-duration: 4s;
+        }
+      
+        @keyframes rainbow {
+          0% {
+            background-color: blue;
+            top: 0vw;
+            left:0vw;
+          }
+
+          25% {
+            background-color: red;
+            top: 20vw;
+            left:10vw;
+          }
+
+          50% {
+            background-color: green;
+            top: 20vw;
+            left:-10vw;
+          }
+          75% {
+            background-color: black;
+          }
+          100% {
+            background-color: yellow;
+            top: 0vw;
+            left:0vw;
+          }
+        }
+      </style>
+
+</head>
+<body>
+    <section>
+        <div id="rect"></div>
+    </section>
+</body>
+</html>
