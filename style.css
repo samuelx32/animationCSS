@@ -1,0 +1,116 @@
+body{
+    background-color: black;
+}
+
+section{
+    border:white 2px solid;
+    width:50vw;
+    margin:auto;
+    height: 40vw;
+}
+
+.bloco {
+  height: 8vw;
+  width: 15vw;
+  background: gray;
+  margin: 2vw auto;
+  border-radius: 5px;
+  position: relative;
+}
+
+#rect {
+  animation-name: rainbow;
+  animation-duration: 1000ms;
+  animation-iteration-count: infinite;
+}
+
+#rect2{
+  animation-name: rainbow2;
+  animation-duration: 1000ms;
+  animation-iteration-count: infinite;
+}
+
+@keyframes rainbow {
+  0% {
+    background-color: #0B173B;
+    top: 0vw;
+    left:0vw;
+  }
+
+  25% {
+    background-color: #0431B4;
+    top: 20vw;
+    left:12vw;
+  }
+
+  50% {
+    background-color: #58ACFA;
+    top: 20vw;
+    left:-12vw;
+    height: 6vw;
+    opacity: 0.1;
+  }
+  75% {
+    background-color: black;
+  }
+  100% {
+    background-color: #0B173B;
+    top: 0vw;
+    left:0vw;
+  }
+}
+
+
+@keyframes rainbow2 {
+  0% {
+    background-color: #0B173B;
+    top: 14vw;
+    left:0vw;
+  }
+
+  25% {
+    background-color: #0431B4;
+    top: 0vw;
+    left:-12vw;
+    
+  }
+
+  50% {
+    background-color: #58ACFA;
+    top: 0vw;
+    left:12vw;
+    height: 6vw;
+    opacity: 0.1;
+  }
+  75% {
+    background-color: black;
+  }
+  100% {
+    background-color: #0B173B;
+    top: 14vw;
+    left:0vw;
+  }
+}
+
+  .bola{
+    background-color: white;
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    position:relative;
+    top:10vw;
+    left:23vw;
+  }
+
+  #centro{
+    animation-name: bola;
+    animation-duration: 1000ms;
+    animation-iteration-count: infinite;
+  }
+
+  @keyframes bola{
+      50%{
+          opacity: 0.2;
+          transform: scale(0.5);
+      }
+  }
